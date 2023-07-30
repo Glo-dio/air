@@ -4,8 +4,8 @@
 			"type": "node",
 			"name": "Exécuter le fichier actif",
 			"request": "launch",
-			"program": "${workspaceFolder}/air00.js",
-			"args": ["Bonjour les gars"]
+			"program": "${workspaceFolder}/air01.js",
+			"args": [",,,Bonjour,les,gars" ","]
 		}
 	]
 }
