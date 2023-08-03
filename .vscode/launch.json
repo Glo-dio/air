@@ -1,11 +1,21 @@
 {
 	"configurations": [
 		{
-			"type": "node",
-			"name": "Exécuter le fichier actif",
+			"name": "Python : fichier actif",
+			"type": "python",
 			"request": "launch",
-			"program": "${workspaceFolder}/air01.js",
-			"args": [",,,Bonjour,les,gars" ","]
-		}
+			"program": "${file}",
+			"console": "integratedTerminal",
+			"justMyCode": true,
+			"args": ["Bonjour les gars "]
+		},
+		// {
+		// 	"type": "node",
+		// 	"name": "Exécuter le fichier actif",
+		// 	"request": "launch",
+		// 	"program": "${workspaceFolder}/air00.py",
+		// 	"args": ["Bonjour les gars"]
+		// 	// "args": ["Crevette magique dans la op lav lag mer des étoiles" "la"]
+		// }
 	]
 }

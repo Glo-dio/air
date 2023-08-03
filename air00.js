@@ -13,10 +13,10 @@ function ma_fonction(str, string_séparateur)
 	while(i <= str.length)
 	{
 		
-		if (((str.charCodeAt(i) == 32 || str.charCodeAt(i) == 9 || str.charCodeAt(i) == 10) 
+		if ((str.charCodeAt(i) == 32 || str.charCodeAt(i) == 9 || str.charCodeAt(i) == 10) 
 			&& (str.charCodeAt(i + 1) > 64 && str.charCodeAt(i + 1) < 91
 			|| str.charCodeAt(i + 1) > 96 && str.charCodeAt(i + 1) < 123)
-			|| i == str.length))
+			|| i == str.length)
 		{
 			tmp.push(String(word.join('')));
 			tableau.push(tmp);
