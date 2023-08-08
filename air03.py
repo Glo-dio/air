@@ -2,7 +2,7 @@ import sys
 
 # fonctions utilisées
 
-def arg_to_array():
+def args_to_array():
 	i = 1
 	args_table = []
 	while i < len(sys.argv):
@@ -46,7 +46,7 @@ if is_arg_valid() == False:
   sys.exit()
 
 # Partie 2 : Parsing
-args = arg_to_array()
+args = args_to_array()
 
 # Partie 3 : Résolution
 answer = find_intru(args)
