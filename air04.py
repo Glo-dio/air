@@ -3,17 +3,17 @@ import sys
 # fonctions utilisées
 
 def delete_siamese_character(array):
-	i = 1
-	string = []
-	string.append(array[0])
+  i = 1
+  string = []
+  string.append(array[0])
 
-	while i < len(array) - 1:
-		while array[i - 1] == array[i]:
-			i += 1
-		string.append(array[i])
-		i += 1	
-	string = ''.join(string)
-	return string
+  while i < len(array) - 1:
+    while array[i - 1] == array[i]:
+      i += 1
+    string.append(array[i])
+    i += 1	
+  string = ''.join(string)
+  return string
 
 def is_arg_valid():
   if is_nb_arg_correct == False:

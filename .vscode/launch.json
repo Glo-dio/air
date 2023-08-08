@@ -4,10 +4,11 @@
 			"name": "Python : fichier actif",
 			"type": "python",
 			"request": "launch",
-			"program": "${file}",
+			// "program": "${file}",
+			"program": "./air05.py",
 			"console": "integratedTerminal",
 			"justMyCode": true,
-			"args": ["Bonjour les gars" "les"]
+			"args": ["1" "1" "+3"]
 		},
 		// {
 		// 	"type": "node",
