@@ -1,3 +1,5 @@
+import sys
+
 # fonctions utilisées
 
 
