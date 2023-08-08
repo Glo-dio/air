@@ -7,7 +7,7 @@
 			"program": "${file}",
 			"console": "integratedTerminal",
 			"justMyCode": true,
-			"args": ["Bonjour les gars "]
+			"args": ["Bonjour les gars" "les"]
 		},
 		// {
 		// 	"type": "node",

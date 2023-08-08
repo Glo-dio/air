@@ -15,18 +15,16 @@ def ma_fonction(string_à_couper, string_séparateur):
   tableau = []
   tmp = []
   i = 0
-  while is_white_space(string_à_couper[i]):
-    i += 1
-  while i < len(string_à_couper) - 1:
-    if is_white_space(string_à_couper[i]) and string_à_couper[i + 1].isalpha():
+  while i < len(string_à_couper):
+   if string_à_couper[i : i + len(string_séparateur)] == string_séparateur[0 : len(string_séparateur)]:
       tmp.append(''.join(word))
       tableau.append(tmp)
       tmp = []
       word = []
-    else:
+      i += len(string_séparateur)
+   else:
       word.append(string_à_couper[i])
-    i += 1
-  word.append(string_à_couper[i])
+   i += 1
   tmp.append(''.join(word))
   tableau.append(tmp)
   return tableau
@@ -36,7 +34,7 @@ def is_arg_valid():
     return False
 
 # Partie 1 : Gestion d'erreur
-is_nb_arg_correct = len(sys.argv) == 2
+is_nb_arg_correct = len(sys.argv) == 3
 
 if is_arg_valid() == False:
   print("error")
@@ -44,9 +42,10 @@ if is_arg_valid() == False:
 
 # Partie 2 : Parsing
 arg = sys.argv[1]
+separator = sys.argv[2]
 
 # Partie 3 : Résolution
-split = ma_fonction(arg, '')
+split = ma_fonction(arg, separator)
 
 # Partie 4 : Affichage
 for word in split:
