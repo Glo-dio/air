@@ -5,10 +5,10 @@
 			"type": "python",
 			"request": "launch",
 			// "program": "${file}",
-			"program": "./air05.py",
+			"program": "./air11.py",
 			"console": "integratedTerminal",
 			"justMyCode": true,
-			"args": ["1" "1" "+3"]
+			"args": []
 		},
 		// {
 		// 	"type": "node",
