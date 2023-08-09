@@ -2,12 +2,12 @@ import sys
 
 # fonctions utilisées
 def args_to_array():
-	i = 1
-	args_table = []
-	while i < len(sys.argv):
-		args_table.append(sys.argv[i])
-		i += 1
-	return args_table
+  i = 1
+  args_table = []
+  while i < len(sys.argv):
+    args_table.append(sys.argv[i])
+    i += 1
+  return args_table
 
 def create_array_1(array):
   array_1 = []

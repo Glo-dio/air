@@ -3,12 +3,12 @@ import sys
 # fonctions utilisées
 
 def args_to_array():
-	i = 1
-	args_table = []
-	while i < len(sys.argv) - 1:
-		args_table.append(sys.argv[i])
-		i += 1
-	return args_table
+  i = 1
+  args_table = []
+  while i < len(sys.argv) - 1:
+    args_table.append(sys.argv[i])
+    i += 1
+  return args_table
 
 def converted_to_compare(array):
   new_array = []
