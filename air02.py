@@ -8,14 +8,14 @@ def args_to_array():
   while i < len(sys.argv) - 1:
     args_table.append(sys.argv[i])
     i += 1
-  print(args_table)
   return args_table
 
 def ma_fonction(array_de_strings, separateur):
   string = []
   for i in range(len(array_de_strings)):
     string.append(array_de_strings[i])
-    string.append(separateur)
+    if i < len(array_de_strings) - 1:
+      string.append(separateur)
   string = "".join(string)
   return (string)
 
@@ -27,8 +27,7 @@ def is_arg_valid():
 is_nb_arg_correct = len(sys.argv) > 2
 
 if is_arg_valid() == False:
-  print("error")
-  sys.exit()
+  sys.exit("error")
 
 # Partie 2 : Parsing
 args = args_to_array()

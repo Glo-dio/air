@@ -19,8 +19,7 @@ def create_array_1(array):
 def create_array_2(array):
   array_2 = []
   if "fusion" not in array:
-    print("error")
-    sys.exit()
+    sys.exit("error")
   start = array.index("fusion") + 1
   for i in array[start:]:
     array_2.append(i)
@@ -74,8 +73,7 @@ def is_arg_valid():
 is_nb_arg_correct = len(sys.argv) > 3
 
 if is_arg_valid() == False:
-  print("error")
-  sys.exit()
+  sys.exit("error")
 
 # Partie 2 : Parsing
 

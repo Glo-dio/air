@@ -19,7 +19,17 @@ def for_unique_element(array, new_element):
     new_array.append(new_element)
   return new_array
 
+def is_sorted(array):
+  i = 0
+  while i < len(array) - 1:
+    if array[i] > array[i + 1]:
+      return False
+    i += 1
+  return True
+
 def sorted_insert(array, new_element):
+  if is_sorted(array) == False:
+    sys.exit("error")
   i = 0
   new_array = []
   element_inserted = False
@@ -57,8 +67,7 @@ def is_arg_valid():
 is_nb_arg_correct = len(sys.argv) > 2
 
 if is_arg_valid() == False:
-  print("error")
-  sys.exit()
+  sys.exit("error")
 
 # Partie 2 : Parsing
 args = args_to_array()

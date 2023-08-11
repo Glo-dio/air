@@ -31,8 +31,7 @@ def find_intru(array):
     intruder = array[index]
     return intruder
   else:
-    print("error")
-    sys.exit()
+    sys.exit("error")
 
 def is_arg_valid():
   if is_nb_arg_correct == False:
@@ -42,8 +41,7 @@ def is_arg_valid():
 is_nb_arg_correct = len(sys.argv) > 3
 
 if is_arg_valid() == False:
-  print("error")
-  sys.exit()
+  sys.exit("error")
 
 # Partie 2 : Parsing
 args = args_to_array()

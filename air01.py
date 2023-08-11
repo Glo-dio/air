@@ -14,9 +14,10 @@ def ma_fonction(string_à_couper, string_séparateur):
   word = []
   tableau = []
   tmp = []
+  comparaison = " " + str(string_séparateur[0 : len(string_séparateur)]) + " "
   i = 0
   while i < len(string_à_couper):
-   if string_à_couper[i : i + len(string_séparateur)] == string_séparateur[0 : len(string_séparateur)]:
+   if string_à_couper[i - 1 : i + len(string_séparateur) + 1] == comparaison:
       tmp.append(''.join(word))
       tableau.append(tmp)
       tmp = []
@@ -37,8 +38,7 @@ def is_arg_valid():
 is_nb_arg_correct = len(sys.argv) == 3
 
 if is_arg_valid() == False:
-  print("error")
-  sys.exit()
+  sys.exit("error")
 
 # Partie 2 : Parsing
 arg = sys.argv[1]

@@ -23,8 +23,7 @@ def is_arg_valid():
 is_nb_arg_correct = len(sys.argv) == 2
 
 if is_arg_valid() == False:
-  print("error")
-  sys.exit()
+  sys.exit("error")
 
 # Partie 2 : Parsing
 args = sys.argv[1]
