@@ -357,4 +357,4 @@ def exo():
   print(f"Total success: \033[33;7m{success_test}/{total_test}\033[00m")
 
 exo()
-print("J’ai terminé l’Épreuve de l’Air et c’était stylé")
+print("J’ai terminé l’Épreuve de l’Air et c’était stylé car je me suis donné 1 semaine pour le faire et j'ai mis 1 semaine :)")
